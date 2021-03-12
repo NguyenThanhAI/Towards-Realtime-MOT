@@ -110,6 +110,7 @@ class LoadVideo:  # for inference
         # Read image
         res, img0 = self.cap.read()  # BGR
         assert img0 is not None, 'Failed to load frame {:d}'.format(self.count)
+        orig_img = img0.copy()
         img0 = cv2.resize(img0, (self.w, self.h))
 
         # Padded resize
@@ -121,7 +122,7 @@ class LoadVideo:  # for inference
         img /= 255.0
 
         # cv2.imwrite(img_path + '.letterbox.jpg', 255 * img.transpose((1, 2, 0))[:, :, ::-1])  # save letterbox image
-        return self.count, img, img0
+        return self.count, img, img0, orig_img
     
     def __len__(self):
         return self.vn  # number of files

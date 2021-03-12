@@ -112,7 +112,7 @@ def eval_seq(opt, dataloader, data_type, result_filename, save_dir=None, show_im
     write_results(result_filename, results, data_type)
     return frame_id, timer.average_time, timer.calls
 
-
+"""
 def main(opt, data_root='/data/MOT16/train', det_root=None, seqs=('MOT16-05',), exp_name='demo', 
          save_images=False, save_videos=False, show_image=True):
     logger.setLevel(logging.INFO)
@@ -213,4 +213,5 @@ if __name__ == '__main__':
          show_image=False,
          save_images=opt.save_images, 
          save_videos=opt.save_videos)
+"""
 

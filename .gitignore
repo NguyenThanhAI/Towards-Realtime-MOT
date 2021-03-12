@@ -1,3 +1,39 @@
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.mp4a
+*.wav
+*.mkv
+*.avi
+*.tfevents.*
+*.tfrecord
+checkpoint
+*.meta
+*.index
+*.data*
+*.csv
+*.npy
+*.pth
+*.h5
+*.pickle
+*.pkl
+
+# Editors
+.vscode/
+.idea/
+
+# Vagrant
+.vagrant/
+
+# Mac/OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Source for the following rules: https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+
 results/
 weights/
 data/mot17

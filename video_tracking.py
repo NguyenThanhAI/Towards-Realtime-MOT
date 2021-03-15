@@ -37,7 +37,7 @@ if __name__ == '__main__':
     logger.setLevel(logging.INFO)
 
     if not args.output_dir == None:
-        if not os.path.join(args.output_dir):
+        if not os.path.exists(args.output_dir):
             os.makedirs(args.output_dir, exist_ok=True)
 
     cfg_dict = parse_model_cfg(path=args.cfg)
